@@ -38,7 +38,8 @@
         android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/view2"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@android:drawable/btn_star" />
+        app:srcCompat="@android:drawable/btn_star"
+        android:contentDescription="TODO" />
 
     <LinearLayout
         android:layout_width="350dp"
@@ -48,12 +49,13 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:orientation="vertical"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view2"
-        app:layout_constraintVertical_bias="0.060000002">
+        app:layout_constraintVertical_bias="0.060000002"
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/MainButton1"
@@ -61,12 +63,13 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#4CAF50"
-            android:onClick="goToLogActivity"
+            android:onClick="onClick"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:text="@string/log_body_temperature"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="#C61C1C" />
+            android:textColor="#C61C1C"
+            android:paddingStart="10dp" />
 
         <View
             android:id="@+id/view"
@@ -79,12 +82,13 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#4CAF50"
-            android:onClick="goToNormalActivity"
+
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:text="@string/check_normal_range"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="#C61C1C" />
+            android:textColor="#C61C1C"
+            android:paddingStart="10dp" />
 
         <View
             android:id="@+id/view3"
@@ -97,12 +101,13 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#4CAF50"
-            android:onClick="goToMechanismActivity"
+
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:text="@string/mechanism_of_fever"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="#C61C1C" />
+            android:textColor="#C61C1C"
+            android:paddingStart="10dp" />
 
         <View
             android:id="@+id/view4"
@@ -115,12 +120,13 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#4CAF50"
-            android:onClick="goToHandleActivity"
+
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:text="@string/handling_fever"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="#C61C1C" />
+            android:textColor="#C61C1C"
+            android:paddingStart="10dp" />
 
     </LinearLayout>
 
