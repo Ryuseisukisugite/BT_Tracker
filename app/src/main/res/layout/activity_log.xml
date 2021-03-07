@@ -4,14 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#96E3F6"
+    android:scrollbarSize="4dp"
     tools:context=".LogActivity">
 
     <TextView
         android:id="@+id/LogTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#FAD6D6"
         android:text="Please log your temperature today"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#3B9F25"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
